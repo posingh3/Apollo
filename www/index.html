@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+	<head>
+		<title>Apollo</title>
+	</head>
+	<body style="background-color:#D3E4F8;">
+		<div class = "top-part">
+			<div class="login-box">
+				<div class="icon-box">
+					<img src="css\images\ciscologo.png" class="logo-location">
+				</div>
+			</div>
+		</div>
+		<div class = "bottom-part">
+			<div class = "heading">
+				<p class="welcome"><b>Analytics Driven Software Defect Assignment</b></p>
+			</div>
+			<div class="enclose-all">
+				<table class="outer">
+					<form>
+						 <fieldset class="top-table">
+						  <legend><b>Top</b></legend>
+						 </fieldset>
+						 
+						 <fieldset class="what-table">
+						  <legend><b>What</b></legend>
+						 </fieldset>
+						 
+						 <fieldset class="howBad-table">
+						  <legend><b>How bad</b></legend>
+						 </fieldset>
+						 
+						 <fieldset class="who-table">
+						  <legend><b>Who</b></legend>
+						 </fieldset>
+						 
+						 <fieldset class="version-table">
+						  <legend><b>Version</b></legend>
+						 </fieldset>
+						 
+						 <fieldset class="problem-table">
+						  <legend><b>Problem Evaluation</b></legend>
+						 </fieldset>
+						 
+						 <fieldset class="more-table">
+						  <legend><b>More</b></legend>
+						 </fieldset> 
+					</form>
+				</table>
+				<div class="project">Project: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="namefield"><br></div>
+				<div class="headline">Headline: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='70'><br></div>
+				<div class="summary">Summary: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" style = 'height:50px;width:500px' ><br></div>
+				<div class="product">Product: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='20'><br></div>
+				<div class="component">Component: &nbsp;&nbsp;&nbsp;<input type="text" size='20'><br></div>
+				<div class="software">Software: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='20'><br></div>
+				<div class="hardware">Hardware: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='20'><br></div>
+				<div class="commit">Commit Type: <input type="text" size='20'><br></div>
+				<div class="severity">Severity: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="priority">DE Priority: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="manager">DE Manager: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='20'><br></div>
+				<div class="version">Version: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="during">Found During: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="impact">Customer Impact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="test">Found in Automated Test: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="document">Document: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="osType">OS-type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				<div class="osVersion">OS-version: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size='23'><br></div>
+				
+				<table class="side">
+					<table class="upperSide">
+					</table>
+					<table class="innerSide">
+					</table>
+				</table>
+				
+				<div class="initialise"><button type="submit" style="width:200px;height:50px" id="init">Initialize</button></div>
+				<div class="comp"><button type="submit" value="ComponentPredictor" style="width:200px;height:50px" id="predict">Component Predictor</button></div>
+				<div class="bug"><button type="submit" value="BugIndicator" style="width:200px;height:50px" id="indicator">Bug Indicator</button></div>
+				<div class="icomments"><button type="submit" value="PromptIComments" style="width:200px;height:50px" id="prompt">Prompt IComments</button></div>
+				<div class="add"><button type="submit" value="AddToDatabase" style="width:200px;height:50px" id="database">Add To Database</button></div>
+				<div class="out"><p id="output"></p></div>
+			</div>
+		</div>
+
+		<script src="openCpu/jquery-1.10.2.min.js"></script>
+		<script src="openCpu/opencpu-0.4.js"></script>
+		<script src="openCpu/myScript.js"></script>
+	</body>
+</html> 
