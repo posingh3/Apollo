@@ -1,6 +1,5 @@
 
 knn2 <- function() {
-
 	#add
 	mat1 = tdm.stack.nl
 	mat2 = tdm.stack.nlT
@@ -45,7 +44,7 @@ knn2 <- function() {
 	knn.pred = as.matrix(knn.pred)
 	save.image(file = "C://Users//posingh3//Desktop//419//myfile1.RData" )
 	#write.csv(knn.pred,"C://Users/posingh3//Desktop//results.csv", append = FALSE)
-	list(
+	list (
 		message = paste(knn.pred)
 	)
 }
