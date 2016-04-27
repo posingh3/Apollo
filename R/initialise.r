@@ -1,7 +1,6 @@
 #init
 
 initialise <- function() {
-
 	library(tm)
 	library(plyr)
 	library(class)
@@ -54,12 +53,14 @@ initialise <- function() {
 
 	#holdout
 	train.idx <- sample(nrow(tdm.stack),ceiling(nrow(tdm.stack) * 1))
-	
+
+	#model
 	tdm.cat = tdm.stack[,"targetCat"]
 	tdm.stack.nl = tdm.stack[,!colnames(tdm.stack) %in% "targetCat"]
 
+
 	save.image(file = "C://Users//posingh3//Desktop//419//myfile.RData" )
-	 list(
-    message = paste("hey")
-  )
+	list(message = paste("hello")
+
 }
+
