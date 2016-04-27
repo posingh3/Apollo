@@ -1,5 +1,5 @@
 
-knn2 <- function () {
+knn2 <- function() {
 	load("C://Users//posingh3//Desktop//419//myfile.RData")
 	library(tm)
 	library(plyr)
@@ -51,7 +51,7 @@ knn2 <- function () {
 	tdm.stack.nlT = tdm.stackT[,!colnames(tdm.stackT) %in% "targetCat"]
 
 	#add
-	mat1 = tdm.stack.nlT
+	mat1 = tdm.stack.nl
 	mat2 = tdm.stack.nlT
 	xx <- (mat2[,intersect(colnames(mat2),colnames(mat1))])
 	#xx = as.data.frame(xx)
@@ -60,8 +60,8 @@ knn2 <- function () {
 	yy <- read.table(textConnection(""), col.names = colnames(mat1),check.names = FALSE, colClasses = "integer")
 	zz <- rbind.fill(xx, yy)
 	zz[is.na(zz)] = 0
-	pp = data.frame(zz[,intersect(colnames(zz),colnames(tdm.stack.nlT))], check.names = FALSE)
-	tdm.stack.nlT = tdm.stack.nlT[,order(names(tdm.stack.nlT))]
+	pp = data.frame(zz[,intersect(colnames(zz),colnames(tdm.stack.nl))], check.names = FALSE)
+	tdm.stack.nl = tdm.stack.nl[,order(names(tdm.stack.nl))]
 	pp = pp[,order(names(pp))]
 
 	len = dim(zz)
@@ -77,7 +77,7 @@ knn2 <- function () {
 
 
 
-	knn.pred = knn(tdm.stack.nlT[train.idx,],pp[text.idxT,],tdm.cat[train.idx], prob =TRUE)
+	knn.pred = knn(tdm.stack.nl[train.idx,],pp[text.idxT,],tdm.cat[train.idx], prob =TRUE)
 
 	end.timeT = Sys.time()
 	timeT = end.timeT -start.timeT
@@ -92,9 +92,9 @@ knn2 <- function () {
 	# tkinsert(txtWidget,"end",paste(txt,collapse="\n"))
 
 	knn.pred = as.matrix(knn.pred)
+	list(
+		message = paste(knn.pred)
+	)
 	save.image(file = "C://Users//posingh3//Desktop//419//myfile1.RData" )
 	#write.csv(knn.pred,"C://Users/posingh3//Desktop//results.csv", append = FALSE)
-	list(
-		message(knn.pred)
-	)
 }
