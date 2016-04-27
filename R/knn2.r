@@ -51,7 +51,7 @@ knn2 <- function () {
 	tdm.stack.nlT = tdm.stackT[,!colnames(tdm.stackT) %in% "targetCat"]
 
 	#add
-	mat1 = tdm.stack.nl
+	mat1 = tdm.stack.nlT
 	mat2 = tdm.stack.nlT
 	xx <- (mat2[,intersect(colnames(mat2),colnames(mat1))])
 	#xx = as.data.frame(xx)
