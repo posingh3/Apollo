@@ -59,7 +59,7 @@ initialise <- function() {
 	tdm.stack.nl = tdm.stack[,!colnames(tdm.stack) %in% "targetCat"]
 
 
-	save.image(file = "C://Users//posingh3//Desktop//419//myfile.RData" )
+	#save.image(file = "C://Users//posingh3//Desktop//419//myfile.RData" )
 	list(message = paste("hello"))
 
 }

@@ -92,7 +92,7 @@ knn2 <- function() {
 	# tkinsert(txtWidget,"end",paste(txt,collapse="\n"))
 
 	knn.pred = as.matrix(knn.pred)
-	save.image(file = "C://Users//posingh3//Desktop//419//myfile1.RData" )
+	#save.image(file = "C://Users//posingh3//Desktop//419//myfile1.RData" )
 	list(
 		message = paste(knn.pred)
 	)
