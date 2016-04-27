@@ -14,7 +14,7 @@ $(document).ready(function() {
 	$('#predict').on("click",function() {
         
         //perform the request
-        var req = ocpu.rpc("file", {}, function(output){
+        var req = ocpu.rpc("knn2", {}, function(output){
           $("#output").text(output.message);
         });
         
@@ -24,7 +24,7 @@ $(document).ready(function() {
 	})
 				
 	$('#indicator').on("click",function() {
-		var req = ocpu.rpc("knn2", {}, function(output){
+		var req = ocpu.rpc("file", {}, function(output){
           $("#output").text(output.message);
         });
         
