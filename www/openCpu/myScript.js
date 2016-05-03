@@ -34,8 +34,8 @@ $(document).ready(function() {
 	})
 				
 	$('#prompt').on("click",function() {
-		var req = ocpu.rpc("comment", {}, function(output){
-          $("#output").text(output.message);
+		var req = ocpu.rpc("comment", {}, function(session){
+          $("#prompt").attr("href", session.getLoc() + "R/print")
         });
         
 		req.fail(function(){

@@ -1,0 +1,14 @@
+---Start of Note Titled: I-comments.p2 (Added 08/22/2014 14:34:14 by sgersapp)---
+I believe this was an old bug which was fixed in later builds. Since you upgraded the build, the incorrect configuration was migration and you are seeing the bug now.
+Please trying to manually configure the machine into this state. I'm pretty sure you will not see it.
+
+I suggest marking this either U or R.
+---End of Note Titled: I-comments.p2---
+---Start of Note Titled: I-comments.p1 (Added 08/22/2014 09:40:03 by bructhom)---
+Please include the original 359 saved config. The config you have included is not valid due to problems with the time range definition 'Disabled' being missing. This problem with the config file has nothing at all to do with quotas.
+---End of Note Titled: I-comments.p1---
+---Start of Note Titled: I-comments (Added 08/21/2014 15:41:35 by bructhom)---
+Please provide information on how that XML config was derived?
+
+The XML config is invalid since there are references in policies to time range 'Disabled', but time range 'Disabled' is not defined.
+---End of Note Titled: I-comments---
