@@ -50,6 +50,6 @@ file <- function() {
 	matrixtop[4] = files[val2[1,4]]
 	matrixtop[5] = files[val2[1,5]]
 
-	save.image(file = "C://Users//posingh3//Desktop//419//myfile2.RData" )
+	#save.image(file = "C://Users//posingh3//Desktop//419//myfile2.RData" )
 	list(message = paste(files[val2[1,1]],files[val2[1,2]],files[val2[1,3]],files[val2[1,4]],files[val2[1,5]])) 
 }
