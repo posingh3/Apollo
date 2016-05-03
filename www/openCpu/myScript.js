@@ -34,7 +34,13 @@ $(document).ready(function() {
 	})
 				
 	$('#prompt').on("click",function() {
-		alert("Prompt IComments!!!!");
+		var req = ocpu.rpc("comment", {}, function(output){
+          $("#output").text(output.message);
+        });
+        
+		req.fail(function(){
+          alert("Server error: " + req.responseText);
+        });
 	})
 				
 	$('#database').on("click",function() {
